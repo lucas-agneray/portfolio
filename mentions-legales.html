@@ -16,15 +16,41 @@
             min-height: 100vh;
         }
 
+        /* ==================================================
+           PAGE DES MENTIONS LÉGALES
+        ================================================== */
+
         .legal-page {
             max-width: 900px;
             margin: 0 auto;
             padding: 60px 20px;
         }
 
+        /* ==================================================
+           EN-TÊTE DES MENTIONS LÉGALES
+        ================================================== */
+
         .legal-header {
+            position: static !important;
+
+            width: auto !important;
+            height: auto !important;
+
+            margin: 0 0 45px 0 !important;
+            padding: 0 !important;
+
             text-align: center;
-            margin-bottom: 45px;
+
+            background: transparent !important;
+
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+
+            border: none !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+
+            overflow: visible !important;
         }
 
         .legal-header .eyebrow {
@@ -43,12 +69,19 @@
             opacity: 0.7;
         }
 
+        /* ==================================================
+           CARTES
+        ================================================== */
+
         .legal-card {
             padding: 30px;
             margin-bottom: 20px;
+
             border-radius: 20px;
+
             background: rgba(255, 255, 255, 0.04);
             border: 1px solid rgba(255, 255, 255, 0.1);
+
             transition: transform 0.3s ease;
         }
 
@@ -71,6 +104,10 @@
             color: #91a1ff;
         }
 
+        /* ==================================================
+           BOUTON RETOUR
+        ================================================== */
+
         .legal-back {
             display: flex;
             justify-content: center;
@@ -79,12 +116,17 @@
 
         .legal-back a {
             display: inline-block;
+
             padding: 14px 25px;
+
             border-radius: 50px;
+
             text-decoration: none;
             font-weight: 600;
+
             background: #6575ed;
             color: white;
+
             transition: 0.3s;
         }
 
@@ -93,7 +135,12 @@
             opacity: 0.9;
         }
 
+        /* ==================================================
+           MOBILE
+        ================================================== */
+
         @media (max-width: 600px) {
+
             .legal-page {
                 padding: 40px 15px;
             }
@@ -110,6 +157,7 @@
 <main class="legal-page">
 
     <header class="legal-header">
+
         <p class="eyebrow">INFORMATIONS</p>
 
         <h1>Mentions légales</h1>
@@ -118,9 +166,12 @@
             Toutes les informations concernant
             ce portfolio personnel.
         </p>
+
     </header>
 
+
     <section class="legal-card">
+
         <h2>01 — Éditeur du site</h2>
 
         <p>
@@ -136,9 +187,12 @@
         <p>
             Site édité à titre non professionnel.
         </p>
+
     </section>
 
+
     <section class="legal-card">
+
         <h2>02 — Hébergement</h2>
 
         <p>
@@ -151,9 +205,12 @@
             doivent être complétées à partir des
             informations officielles de GitHub.
         </p>
+
     </section>
 
+
     <section class="legal-card">
+
         <h2>03 — Propriété intellectuelle</h2>
 
         <p>
@@ -168,9 +225,12 @@
             doit respecter les droits applicables
             et obtenir les autorisations nécessaires.
         </p>
+
     </section>
 
+
     <section class="legal-card">
+
         <h2>04 — Données personnelles</h2>
 
         <p>
@@ -192,9 +252,12 @@
             ses services, conformément à sa
             propre politique de confidentialité.
         </p>
+
     </section>
 
+
     <section class="legal-card">
+
         <h2>05 — Contact</h2>
 
         <p>
@@ -203,12 +266,16 @@
             l'adresse électronique indiquée sur
             le portfolio.
         </p>
+
     </section>
 
+
     <div class="legal-back">
+
         <a href="index.html">
             ← Retour au portfolio
         </a>
+
     </div>
 
 </main>
